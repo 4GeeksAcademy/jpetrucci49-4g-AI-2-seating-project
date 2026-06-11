@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+	--color-cinema-50: #fff8ea;
+	--color-cinema-100: #ffebc6;
+	--color-cinema-500: #d9882c;
+	--color-cinema-700: #8c4f12;
+}
+
+body {
+	background:
+		radial-gradient(circle at 10% 0%, rgb(217 136 44 / 0.2), transparent 30%),
+		radial-gradient(circle at 85% 20%, rgb(148 163 184 / 0.15), transparent 35%),
+		linear-gradient(180deg, #fff9ef 0%, #f7fafc 100%);
+}
+
+.scenario-btn {
+	@apply rounded-xl border border-slate-300 px-3 py-2 text-sm font-medium transition hover:border-amber-500 hover:text-amber-700;
+}
+
+.seat-layout {
+	@apply min-w-[680px] space-y-2;
+}
+
+.row-wrap {
+	@apply flex items-center gap-2;
+}
+
+.row-label {
+	@apply w-10 text-xs font-semibold text-slate-600;
+}
+
+.seat-row {
+	@apply grid grow grid-cols-10 gap-2;
+}
+
+.col-head {
+	@apply text-center text-xs;
+}
+
+.seat {
+	@apply rounded-lg border px-2 py-1 text-xs font-semibold transition;
+}
+
+.seat-available {
+	@apply border-emerald-300 bg-emerald-100 text-emerald-800 hover:bg-emerald-200;
+}
+
+.seat-occupied {
+	@apply cursor-not-allowed border-rose-300 bg-rose-100 text-rose-700;
+}
