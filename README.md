@@ -46,21 +46,40 @@ Use this command to validate only TypeScript without starting Vite:
 npm run typecheck
 ```
 
-## How do I run `main.ts` from the terminal?
+## How do I run the seat manager from the terminal?
 
-If you want to execute `./src/main.ts` directly and see `console.log` output in the terminal, run:
+If you want to use the project as a command line seat manager, run:
 
 ```bash
 npm run console
 ```
 
-This command is already wired to `./src/main.ts`.
+This command is wired to `./src/cli.ts`.
+
+The terminal version first prints the required assignment scenarios:
+
+1. Empty room
+2. Partially filled room
+3. Nearly full room with scattered single seats
+4. Full room
+
+After that, it starts an interactive menu where you can:
+
+1. Display the current room matrix
+2. Reserve a seat by row and column
+3. Count occupied and available seats
+4. Find the first adjacent available pair
+5. Load one of the predefined scenarios
+6. Re-run the scenario test output
+
+Use `0` in the menu to exit the terminal program.
 
 ## Where do I write my code?
 
 It depends on the language:
 
-- `./src/main.ts` for TypeScript logic.
+- `./src/main.ts` for the browser interface logic.
+- `./src/cli.ts` for the command line seat manager.
 - `./src/tailwind.css` for Tailwind CSS v4 styles.
 - `./index.html` for the HTML shell.
 
