@@ -61,7 +61,7 @@ This command is already wired to `./src/main.ts`.
 It depends on the language:
 
 - `./src/main.ts` for TypeScript logic.
-- `./src/style.css` for styles (Tailwind CSS v4 is already imported).
+- `./src/tailwind.css` for Tailwind CSS v4 styles.
 - `./index.html` for the HTML shell.
 
 You can add more files as needed, just make sure to import them from `main.ts`.
