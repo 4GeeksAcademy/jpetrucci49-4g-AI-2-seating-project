@@ -62,7 +62,7 @@ Este comando ya viene conectado por defecto a `./src/main.ts`.
 Depende del lenguaje:
 
 - `./src/main.ts` para la logica en TypeScript.
-- `./src/style.css` para estilos (Tailwind CSS v4 ya viene importado).
+- `./src/tailwind.css` para estilos de Tailwind CSS v4.
 - `./index.html` para el HTML base.
 
 Puedes agregar mas archivos cuando quieras, solo asegúrate de importarlos desde `main.ts`.
